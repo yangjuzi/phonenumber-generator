@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Generator - Free Phone Numbers for Testing</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-primary">PhoneGen</a>
+            <div class="space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary">FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Generate Phone Numbers<br>For Free
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                Create realistic phone numbers instantly for testing, development, or demonstration purposes.
+            </p>
+            
+            <!-- Generator Tool -->
+            <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-6 mb-12">
+                <select id="countrySelect" class="w-full mb-4 p-3 border rounded-lg">
+                    <option value="US">United States</option>
+                    <option value="CN">China</option>
+                    <option value="JP">Japan</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="BR">Brazil</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="RU">Russia</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="IN">India</option>
+                </select>
+                <button id="generateBtn" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90 transition">
+                    Generate Numbers
+                </button>
+                <div id="results" class="mt-4 space-y-2 text-left"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Multiple Countries</h3>
+                    <p class="text-gray-600">Generate phone numbers for 10 different countries with correct formats.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Instant Generation</h3>
+                    <p class="text-gray-600">Get 5 new phone numbers instantly with a single click.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4">Always Free</h3>
+                    <p class="text-gray-600">No registration or payment required. Use it as much as you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="flex flex-col space-y-8">
+                    <div class="flex items-start">
+                        <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">1</span>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Select a Country</h3>
+                            <p class="text-gray-600">Choose from our list of 10 supported countries.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">2</span>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Click Generate</h3>
+                            <p class="text-gray-600">Click the generate button to create 5 new phone numbers.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">3</span>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Use Your Numbers</h3>
+                            <p class="text-gray-600">Copy the generated numbers for your testing needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-2">Are these real phone numbers?</h3>
+                    <p class="text-gray-600">No, these are randomly generated numbers following each country's phone number format. They are for testing purposes only.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-2">Is there a limit to how many numbers I can generate?</h3>
+                    <p class="text-gray-600">No, you can generate as many numbers as you need, completely free.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-2">Can I use these numbers for my applications?</h3>
+                    <p class="text-gray-600">Yes, these numbers are perfect for testing applications, databases, or any development purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">PhoneGen</h3>
+                    <p class="text-gray-300">The simplest way to generate phone numbers for testing.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-300">Email: tingy0222@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Phone Number Generator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
